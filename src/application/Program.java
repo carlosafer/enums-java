@@ -12,5 +12,13 @@ public class Program {
 		Order order = new Order(1080, new Date(), OrderStatus.DELIVERED);
 		
 		System.out.println(order);
+		
+		OrderStatus os1 = OrderStatus.PROCESSING;
+		
+		//Converting a String to enum type:
+		OrderStatus os2 = OrderStatus.valueOf("SHIPPED");
+		
+		System.out.println(os1);
+		System.out.println(os2);
 	}
 }
